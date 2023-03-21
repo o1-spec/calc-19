@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: hsl(224, 28%, 35%);
+    transition: all 0.7s;
+}
+
+.container{
+    max-width: 33rem;
+    margin: auto;
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.calculator{
+    transition: all 0.7s;
+}
+
+.calc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calc p{
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.theme{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.white{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.theme-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.theme-num{
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.theme-num span{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.theme-toggle{
+    background-color: hsl(222, 26%, 31%);
+    width: 6.4rem;
+    border-radius: 10px;
+    height: 2rem;
+    position: relative;
+    padding: 0.3rem;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle p{
+    position: absolute;
+    left: 10%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 50%;
+    display: block;
+    transition: all 1s;
+}
+
+.theme span{
+    color: #fff;
+    font-size: 1.4rem;
+    padding-right: 4px;
+}
+
+.display{
+    background-color: hsl(224, 36%, 15%);
+    height: 7rem;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem;
+}
+
+.values{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.8rem;
+    background-color: hsl(222, 26%, 31%);
+    padding: 2rem;
+}
+
+.button{
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px hsl(224, 28%, 35%);
+    color: hsl(221, 14%, 31%);
+    background-color: hsl(30, 25%, 89%);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.del{
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px hsl(224, 28%, 35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.reset{
+    grid-column: span 2;
+    background-color: hsl(225, 21%, 49%);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px hsl(224, 28%, 35%);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.equal{
+    grid-column: span 2;
+    background-color:  hsl(6, 63%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(30, 25%, 89%);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 1px 2px 10px hsl(6, 70%, 34%);
+    cursor: pointer;
+}
+
+
+/*************************/
+/** TOGGLE BUTTONS *******/
+/************************/
+/* WHITE BG*/
+.white-bg .calc-white{
+    color: #000;
+}
+
+.white-bg .white{
+    color: #000;
+}
+
+.white-bg .num-white{
+    color: #000;
+}
+
+.white-bg .theme-toggle{
+    background-color: hsl(0,5%,81%);
+}
+
+.white-bg #display{
+    background-color: hsl(0, 0%, 96%);
+    color: hsl(224, 36%, 15%);
+}
+
+.white-bg .values{
+    background-color: hsl(0,5%,81%);
+}
+
+.white-bg #tog-b{
+    transform: translateX(20px);
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 1px 2px 4px hsl(25, 99%, 27%);
+}
+
+.white-bg .button{
+    color: hsl(60, 10%, 19%);
+    background-color: hsl(0, 0%, 93%);
+    transition: all 0.8s;
+    box-shadow: 0px 4px 2px hsl(35, 11%, 61%);
+}
+
+.white-bg .button:hover{
+    background-color: #fff;
+}
+
+.white-bg #reset{
+    box-shadow: 1px 2px 4px hsl(185, 58%, 25%);
+    background-color: hsl(185, 42%, 37%);
+}
+
+.white-bg #equal{
+    box-shadow: 1px 2px 4px hsl(25, 99%, 27%);
+    background-color:hsl(25, 98%, 40%);
+}
+
+.white-bg #del{
+    box-shadow:1px 2px 4px hsl(185, 58%, 25%);
+    background-color: hsl(185, 42%, 37%);
+}
+
+.white-bg .values{
+    background-color: hsl(45, 7%, 89%);
+}
+
+/***  PURPLE BG */
+.purple-bg #display{
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+.purple-bg .values{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.purple-bg .theme-toggle{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.purple-bg .calc-white{
+    color: hsl(52, 100%, 62%);
+}
+
+.purple-bg .white{
+    color: hsl(52, 100%, 62%);
+}
+
+.purple-bg .num-white{
+    color: hsl(52, 100%, 62%);
+
+}
+
+.purple-bg #tog-b{
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 1px 2px 4px hsl(177, 92%, 70%);
+}
+
+.purple-bg .button{
+    color: hsl(52, 100%, 62%);
+    background-color:  hsl(268, 47%, 21%);
+    box-shadow: 0px 3px 1px hsl(290, 70%, 36%);
+    transition: all 0.8s;
+}
+
+.purple-bg .button:hover{
+    background-color: hsl(290, 70%, 36%);
+}
+
+.purple-bg #reset{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0px 3px 1px hsl(285, 91%, 52%);
+}
+
+.purple-bg #equal,.purple-bg #del{
+    background-color: hsl(176, 100%, 44%);
+    color: #000;
+    box-shadow: 0px 3px 1px hsl(177, 92%, 70%);
+    transition: all 0.8s;
+}
+
+.purple-bg #equal:hover{
+    background-color: hsl(177, 92%, 70%);
+}
+
+@media(max-width: 760px){
+    html{
+        font-size: 75%;
+    }
+
+    .container{
+        padding: 0rem 1rem;
+        margin-top: 3.4rem;
+        max-width: 30rem;
+    }
+
+    #display{
+        padding-right: 1.4rem;
+    }
+
+    .calc p{
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+    .theme {
+        gap: 2rem;
+    }
+
+    .theme span{
+        font-size: 1.2rem;
+    }
+
+    .button{
+        font-weight: 800;
+        font-size: 2.2rem;
+        padding: 1.4rem 0.5rem;
+    }
+
+    .del{
+        font-size: 1.6rem;
+        padding: 1.4rem 0.5rem;
+    }
+
+    #equal,.reset{
+        padding: 1.4rem;
+        font-weight: 800;
+    }
+}
+
+@media(max-width: 340px){
+    html{
+        font-size: 60%;
+    }
+}

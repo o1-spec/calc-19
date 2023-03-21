@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="calculator">
+    <div class="container">
+      <div class="calc">
+        <p class="calc-white">calc</p>
+        <div class="theme">
+          <span class="white">theme</span>
+          <div class="theme-btn">
+            <div class="theme-num">
+              <span class="num-white">1</span>
+              <span class="num-white">2</span>
+              <span class="num-white">3</span>
+            </div>
+            <div class="theme-toggle">
+              <p id="tog-b"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="display" class="display"></div>
+      <div class="values">
+        <div class="button" data-num="7">7</div>
+        <div class="button" data-num="8">8</div>
+        <div class="button" data-num="9">9</div>
+        <div id="del" class="del">del</div>
+        <div class="button" data-num="4">4</div>
+        <div class="button" data-num="5">5</div>
+        <div class="button" data-num="6">6</div>
+        <div id="divide" class="button" data-num="+">+</div>
+        <div class="button" data-num="1">1</div>
+        <div class="button" data-num="2">2</div>
+        <div class="button" data-num="3">3</div>
+        <div class="button" data-num="-">-</div>
+        <div class="button" data-num=".">.</div>
+        <div class="button" data-num="0">0</div>
+        <div class="button" data-num="/">/</div>
+        <div class="button" data-num="*">&times;</div>
+        <div id="reset" class="reset">reset</div>
+        <div id="equal" class="equal">=</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>.-->
+</body>
+
+</html>
